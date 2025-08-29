@@ -1,0 +1,34 @@
+ -- 
+  --  bY La{*}Kost87, TrueDEL(+)  --  
+📄 Beispiel: JSON-Format (flexibler, verschachtelte Daten möglich)
+-- 
+
+-- 
+[
+  {
+    "timestamp": "2025-08-29T07:00:12Z",
+    "level": "ERROR",
+    "error_code": "DB1001",
+    "message": "Verbindung zur Datenbank fehlgeschlagen",
+    "source": "db_connector.py",
+    "stack_trace": "Traceback (most recent call last): ..."
+  },
+  {
+    "timestamp": "2025-08-29T07:01:45Z",
+    "level": "WARN",
+    "error_code": "DB2002",
+    "message": "Langsame Abfrage erkannt",
+    "source": "query_executor.py",
+    "stack_trace": "SELECT * FROM users WHERE ..."
+  }
+]
+
+  --
+ Vorteile:
+- Ideal für NoSQL-Datenbanken (MongoDB, Elasticsearch).
+- Gut maschinenlesbar und API-freundlich.
+- Unterstützt komplexere Strukturen.
+
+
+
+--
