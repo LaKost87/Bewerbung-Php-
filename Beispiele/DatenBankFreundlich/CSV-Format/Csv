@@ -1,0 +1,69 @@
+
+-- 
+Beispiel: CSV-Format (datenbankfreundlich)
+timestamp,level,error_code,message,source,stack_trace
+2025-08-29T07:00:12Z,ERROR,DB1001,"Verbindung zur Datenbank fehlgeschlagen","db_connector.py","Traceback (most recent call last): ..."
+2025-08-29T07:01:45Z,WARN,DB2002,"Langsame Abfrage erkannt","query_executor.py","SELECT * FROM users WHERE ..."
+2025-08-29T07:03:10Z,INFO,DB3000,"Verbindung erfolgreich hergestellt","db_connector.py",""
+
+
+Vorteile:
+- Einfach in MySQL, PostgreSQL, SQLite importierbar (LOAD DATA oder COPY).
+- GitHub kann CSV-Dateien direkt anzeigen.
+- Klar definierte Spalten.
+
+📄 Beispiel: JSON-Format (flexibler, verschachtelte Daten möglich)
+[
+  {
+    "timestamp": "2025-08-29T07:00:12Z",
+    "level": "ERROR",
+    "error_code": "DB1001",
+    "message": "Verbindung zur Datenbank fehlgeschlagen",
+    "source": "db_connector.py",
+    "stack_trace": "Traceback (most recent call last): ..."
+  },
+  {
+    "timestamp": "2025-08-29T07:01:45Z",
+    "level": "WARN",
+    "error_code": "DB2002",
+    "message": "Langsame Abfrage erkannt",
+    "source": "query_executor.py",
+    "stack_trace": "SELECT * FROM users WHERE ..."
+  }
+]
+
+
+Vorteile:
+- Ideal für NoSQL-Datenbanken (MongoDB, Elasticsearch).
+- Gut maschinenlesbar und API-freundlich.
+- Unterstützt komplexere Strukturen.
+
+💡 GitHub-Tipp
+- Lege die Datei z. B. unter /logs/error_log_template.csv oder /logs/error_log_template.json ab.
+- Füge eine kurze README.md hinzu, die das Format erklärt.
+- Nutze .gitignore, um echte sensible Logs nicht versehentlich hochzuladen.
+
+Wenn du magst, kann ich dir gleich noch eine README-Vorlage schreiben, die erklärt, wie man diese Log-Datei in eine Datenbank importiert — dann ist dein GitHub-Repo sofort selbsterklärend.
+Willst du, dass ich das gleich ergänze?
+ 
+
+  --
+
+ 
+
+timestamp,level,error_code,message,source,stack_trace
+2025-08-29T07:00:12Z,ERROR,DB1001,"Verbindung zur Datenbank fehlgeschlagen","db_connector.py","Traceback (most recent call last): ..."
+2025-08-29T07:01:45Z,WARN,DB2002,"Langsame Abfrage erkannt","query_executor.py","SELECT * FROM users WHERE ..."
+2025-08-29T07:03:10Z,INFO,DB3000,"Verbindung erfolgreich hergestellt","db_connector.py",""
+
+  --  
+
+  
+Vorteile:
+- Einfach in MySQL, PostgreSQL, SQLite importierbar (LOAD DATA oder COPY).
+- GitHub kann CSV-Dateien direkt anzeigen.
+- Klar definierte Spalten.
+
+
+
+  --  
